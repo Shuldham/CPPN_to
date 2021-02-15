@@ -131,7 +131,7 @@ def main(nelx, nely, volfrac, penal, rmin, ft):
             loop, obj, (g + volfrac * nelx * nely) / (nelx * nely), change))
     # Make sure the plot stays and that the shell remains
     plt.show()
-    raw_input("Press any key...")
+    input("Press any key...")
 
 
 # element stiffness matrix
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     main(nelx, nely, volfrac, penal, rmin, ft)
 
 print("COMPARISON BEGINS HERE!")
-raw_input("Press anything to begin comparison")
+input("Press anything to begin comparison")
 print(xList)
 # tests output from generations against output from my code
 for i in range(0, len(xList)):
